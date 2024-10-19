@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            
+        }
+        .header{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            padding: 20px 140px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+        .some{
+            display: flex;
+            align-items: center;
+            gap: 13px;
+           
+        }
+        .some .search{
+            display: flex;
+            border-bottom: 1px solid black; 
+
+        }
+        .some .search input{
+            border: none;
+            background-color: unset;
+            outline: none;
+        }
+        input::placeholder{
+            color: black;
+        }
+        .some .search i {
+            margin-right:5px;
+            margin-top: 0px;
+        }
+
+        .some a{
+            text-decoration: none;
+        }
+       
+        main .notifiction{
+            background-color: rgb(255, 255, 0);
+            padding: 30px;
+            text-align: center;
+            color:rgb(2, 26, 61);
+            font-size: 18px;
+        }
+        main .bg-image{
+            width: 100%;
+            height: 100vh;
+        }
+        .Model{
+            width: 100%;
+        }
+        .Model .model1{
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            padding: 10px 200px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+       .Model .men img{
+        width: 550px;
+       }
+       .Model .order{
+        width: 95%;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid black;
+        margin-left: 15px;
+        margin-top: 10px;
+       }
+       .Model .order:hover{
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+       }
+       .panel{
+        font-size: 30px;
+        padding-left: 200px;
+        padding-top: 10px;
+       }   
+      
+       .productAl1{
+        width:1125px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+
+       }
+       .pic{
+        width: 40%;
+        margin: 0 10px;
+       }
+       .pic img{
+        width: 100%;
+       }
+       .pic h3 p{
+        margin-left: 10px;
+       }
+       .pic p{
+        margin-top:-20px ;
+       }
+       .pic a{
+        margin-top: -20px;
+        font-size: 20px;
+        margin-left: 240px;
+        color: black;
+       
+       }
+       .border{
+        width: 50px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        
+       }
+       .border .color1{
+        width: 48%;
+        border: 0.5px solid rgb(66, 65, 65);
+        padding: 10px;
+       }
+
+        
+      
+
+    .footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.payment-icons img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.additional-payments img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.chat-button {
+    position: relative;
+    margin-top: 20px;
+    text-align: right;
+    flex-basis: 100%;
+}
+
+.chat-button button {
+    background-color: #fff;
+    color: #1c1c1c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.chat-button button:hover {
+    background-color: #e0e0e0;
+}
+      
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="/imgs/430856544_1139181610592554_2339378024970707628_n.png" alt="" style="width: 133px; height: 38px; margin-left: 200px;">
+        </div>
+        <div class="some">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" style="margin-bottom: 3px;"></i>
+                <input type="text" placeholder="search">
+            </div>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-gear"></i>
+            <span><a href="#" style="color: black;">Login</a></span>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="notifiction">
+            <b>First-Time Shoppers Rejoice: Register & Enjoy a $5 Welcome Offer on Us! </b> <br>
+            <span>Terms and Conditions Apply.</span>
+        </div>
+        <div class="bg-image">
+            <img src="/imgs/462546136_1825935691272600_6111257497560308144_n.png" alt="" width="100%">
+        </div>
+    </main>
+
+    <div class="Model">
+        <div class="model1">
+            <div class="women"> 
+                <img src="imgs/women.jpg" alt="" style="width: 550px;">
+                <div class="order">
+                    <p>Women Collection</p>
+                </div>
+            </div>
+           <div class="men">
+                <img src="imgs/Men.jpg" alt="" >
+                <div class="order">
+                    <p>Men Collection</p>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h3>This Week's Hightlight</h3>
+    </div>
+    <div class="productAl1">
+        <div class="pic" style="margin-left: 0px;">
+            <img src="imgs/pic1.jpg" alt="" height="380px">
+            <h3>12.59$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Cropped Strap Top</p>
+            <div class="border">
+                <div class="color1" style="color:black ;"></div>
+                <div class="color1" style="color:black ;"></div>
+            </div>
+           
+        </div>
+        <div class="pic">
+            <img src="imgs/pic2.jpg" alt="" height="380px">
+            <h3>8.95$</h3>
+            <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+            <p>Cropped Tank Top</p>
+            <div class="border">
+                <div class="color1" style="color: black;"></div>
+                <div class="color1" style="color: rgb(221, 10, 10);"></div>
+            </div>
+            
+
+        </div>
+        <div class="pic">
+            <img src="imgs/pic3.jpg" alt="" height="380px">
+            <h3>13.00$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Corset Tank Top</p>
+            <div class="border">
+                <div class="color1" style="color:rgb(95, 91, 94) ;"></div>
+                <div class="color1" style="color: white;"></div>
+            </div>
+           
+
+        </div>
+        <div class="pic" style="margin-right: 0px;">
+            <img src="imgs/pic4.jpg" alt="" height="380px">
+            <h3>20.59$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Tank Top</p>
+            <div class="border">
+                <div class="color1" style="color:black ;"></div>
+                <div class="color1" style="color: black;"></div>
+            </div>
+           
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="productAl1">
+        <div class="pic" style="margin-left: 0px;">
+            <img src="imgs/pic5.jpg" alt="" height="380px">
+            <h3>12.59$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Cropped Strap Top</p>
+            <div class="border">
+                <div class="color1" style="color: black;"></div>
+                <div class="color1" style="color:black ;"></div>
+            </div>
+           
+        </div>
+        <div class="pic">
+            <img src="imgs/pic9.jpg" alt="" height="380px">
+            <h3>8.95$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Cropped Tank Top</p>
+            <div class="border">
+                <div class="color1" style="color: black;"></div>
+                <div class="color1" style="color: rgb(221, 10, 10);"></div>
+            </div>
+            
+
+        </div>
+        <div class="pic">
+            <img src="imgs/pic7.jpg" alt="" height="380px">
+            <h3>13.00$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Corset Tank Top</p>
+            <div class="border">
+                <div class="color1" style="color:rgb(95, 91, 94) ;"></div>
+                <div class="color1" style="color: white;"></div>
+            </div>
+           
+
+        </div>
+        <div class="pic" style="margin-right: 0px;">
+            <img src="imgs/pic 8.jpg" alt="" height="380px">
+            <h3>20.59$</h3>
+            <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+            <p>Tank Top</p>
+            <div class="border">
+                <div class="color1" style="color: black;"></div>
+                <div class="color1" style="color: black;"></div>
+            </div>
+           
+
+        </div>
+    </div>
+
+
+    <div class="Ecomers">
+            <div class="Ecom1" ></div>
+
+            </div>
+            <div class="Ecom1">
+                
+            </div>
+            <div class="Ecom1">
+                
+            </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>TEN11 App</h3>
+                <ul>
+                    <li><img src="imgs/whicePhoneIcon.png" alt="iOS App Icon"> IOS App</li>
+                    <li><img src="imgs/whicePhoneIcon.png" alt="Android App Icon"> Android App</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><img src="imgs/Feacbookicon.png" alt="Facebook Icon"> Facebook</li>
+                    <li><img src="imgs/instagram-icon-512x512-822bkylo.png" alt="Instagram Icon"> Instagram</li>
+                    <li><img src="imgs/tiktok-round-white-icon.webp" alt="TikTok Icon"> TikTok</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><img src="imgs/Question.png" alt="Help Icon"> Online exchange policy</li>
+                    <li><img src="imgs/price.png" alt="Privacy Icon"> Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>We Accept</h3>
+               <img src="imgs/Banking.png" alt="" width="200px" height="50px">
+            </div>
+            <div class="chat-button">
+                <button>Chat with us</button>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+<script>
+    var header = document.querySelector('header');
+    var main   = document.querySelector('main');
+    var getHight = header.clientHeight;
+    main.style.marginTop = getHight+"px";
+</script>
+</html>
